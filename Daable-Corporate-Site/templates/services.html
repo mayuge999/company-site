@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}サービス{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">サービス内容</h1>
+    
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1724949287786-b40a853afb95" class="img-fluid rounded" alt="個別指導">
+        </div>
+        <div class="col-md-6">
+            <h3>個別指導プログラム</h3>
+            <p>一人ひとりの学習ペースに合わせた丁寧な指導を提供します。経験豊富な講師陣が、生徒様の目標達成をサポートいたします。</p>
+            <ul>
+                <li>完全オーダーメイドカリキュラム</li>
+                <li>定期的な進捗確認</li>
+                <li>学習計画の策定と調整</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-6 order-md-2">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" class="img-fluid rounded" alt="グループ学習">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h3>グループ学習プログラム</h3>
+            <p>仲間と共に学ぶことで、相乗効果を生み出します。ディスカッションやグループワークを通じて、コミュニケーション能力も育成します。</p>
+            <ul>
+                <li>少人数制クラス</li>
+                <li>インタラクティブな学習環境</li>
+                <li>プレゼンテーション機会の提供</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pricing py-5">
+        <h2 class="text-center mb-4">料金プラン</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ベーシックプラン</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">月額29,800円〜</h6>
+                        <ul class="list-unstyled">
+                            <li>週1回の個別指導</li>
+                            <li>オンライン学習材料</li>
+                            <li>月次進捗レポート</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">スタンダードプラン</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">月額49,800円〜</h6>
+                        <ul class="list-unstyled">
+                            <li>週2回の個別指導</li>
+                            <li>グループ学習セッション</li>
+                            <li>進路相談サービス</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">プレミアムプラン</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">月額79,800円〜</h6>
+                        <ul class="list-unstyled">
+                            <li>週3回の個別指導</li>
+                            <li>専門家による進路指導</li>
+                            <li>24時間質問対応</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

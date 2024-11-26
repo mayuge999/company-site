@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #E3F2FD;
+    --accent-color: #1976D2;
+    --text-color: #333333;
+    --light-gray: #F8F9FA;
+    --spacing-unit: 1rem;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.8;
+    background-color: #fff;
+}
+
+/* ナビゲーション */
+.navbar {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #BBDEFB 100%) !important;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+    padding: var(--spacing-unit) 0;
+    border-bottom: 1px solid rgba(33, 150, 243, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+    padding: 0 var(--spacing-unit);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: rgba(0,0,0,0.8) !important;
+    font-weight: 600;
+    padding: 0.5rem var(--spacing-unit) !important;
+    margin: 0 0.25rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+/* カルーセル */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.8);
+}
+
+.carousel-caption {
+    bottom: 20%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* カード */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    opacity: 1;
+}
+
+.pricing-card .price {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+}
+
+.pricing-card .card-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border: none;
+}
+
+.pricing-card ul li {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+/* ボタン */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
+}
+
+/* フッター */
+.footer {
+    background-color: var(--light-gray);
+}
+
+.footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--primary-color);
+}
+
+/* お問い合わせフォーム */
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* 管理画面 */
+.admin-login {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.dashboard-stats {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 企業理念セクション */
+.philosophy-section {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #BBDEFB 100%);
+    padding: 4rem 0;
+    margin: 2rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+}
+
+.philosophy-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.philosophy-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin-bottom: 2rem;
+}
+
+.philosophy-section .value-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.philosophy-section .value-item:hover {
+    transform: translateX(10px);
+}
+
+.philosophy-section .value-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+/* カード要素の改善 */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+}

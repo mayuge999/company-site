@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}ブログ{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">教育ブログ</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <!-- ブログ記事一覧 -->
+            <article class="card mb-4">
+                <img src="https://images.unsplash.com/photo-1724949287995-66cbbf433c95" class="card-img-top" alt="教育環境">
+                <div class="card-body">
+                    <h2 class="card-title">効果的な学習環境の作り方</h2>
+                    <p class="card-text text-muted">2024年3月1日</p>
+                    <p class="card-text">学習効果を最大限に高めるための環境づくりについて、専門家の意見と実践的なアドバイスをご紹介します。</p>
+                    <a href="#" class="btn btn-primary">続きを読む</a>
+                </div>
+            </article>
+
+            <article class="card mb-4">
+                <img src="https://images.unsplash.com/photo-1511551203524-9a24350a5771" class="card-img-top" alt="学習方法">
+                <div class="card-body">
+                    <h2 class="card-title">最新の学習メソッドとその効果</h2>
+                    <p class="card-text text-muted">2024年2月15日</p>
+                    <p class="card-text">教育現場で注目を集める新しい学習方法と、その実践例についてご紹介します。</p>
+                    <a href="#" class="btn btn-primary">続きを読む</a>
+                </div>
+            </article>
+
+            <article class="card mb-4">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" class="card-img-top" alt="教育トレンド">
+                <div class="card-body">
+                    <h2 class="card-title">2024年の教育トレンド</h2>
+                    <p class="card-text text-muted">2024年2月1日</p>
+                    <p class="card-text">今年注目される教育のトレンドと、その背景にある社会の変化について解説します。</p>
+                    <a href="#" class="btn btn-primary">続きを読む</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <!-- サイドバー -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">カテゴリー</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">学習方法 (5)</a></li>
+                        <li><a href="#">教育環境 (3)</a></li>
+                        <li><a href="#">学習効果 (4)</a></li>
+                        <li><a href="#">教育トレンド (6)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">最新記事</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">効果的な学習環境の作り方</a></li>
+                        <li><a href="#">最新の学習メソッドとその効果</a></li>
+                        <li><a href="#">2024年の教育トレンド</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

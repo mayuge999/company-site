@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}ホーム{% endblock %}
+
+{% block content %}
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1673422672504-757a7a57d24a" class="d-block w-100" alt="教育環境">
+            <div class="carousel-caption">
+                <h2>未来を創造する教育</h2>
+                <p>一人ひとりの可能性を最大限に引き出します</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1724949287928-0544c80d4b8a" class="d-block w-100" alt="学習環境">
+            <div class="carousel-caption">
+                <h2>充実した学習環境</h2>
+                <p>最新の設備と経験豊富な講師陣</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1724949287995-66cbbf433c95" class="d-block w-100" alt="生徒の様子">
+            <div class="carousel-caption">
+                <h2>心地よい学びの場</h2>
+                <p>自然に学びが深まる環境づくり</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Daableの特徴</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1511551203524-9a24350a5771" class="card-img-top" alt="個別指導">
+                    <div class="card-body">
+                        <h5 class="card-title">個別指導</h5>
+                        <p class="card-text">一人ひとりの学習スタイルに合わせた丁寧な指導を提供します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1561346745-5db62ae43861" class="card-img-top" alt="グループ学習">
+                    <div class="card-body">
+                        <h5 class="card-title">グループ学習</h5>
+                        <p class="card-text">仲間と共に学び、視野を広げる機会を提供します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1664382953518-4a664ab8a8c9" class="card-img-top" alt="実践的な学び">
+                    <div class="card-body">
+                        <h5 class="card-title">実践的な学び</h5>
+                        <p class="card-text">理論と実践を組み合わせた効果的な学習プログラム。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta py-5 bg-light">
+    <div class="container text-center">
+        <h2>まずは無料相談から</h2>
+        <p class="mb-4">お気軽にお問い合わせください</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">お問い合わせ</a>
+    </div>
+</section>
+{% endblock %}

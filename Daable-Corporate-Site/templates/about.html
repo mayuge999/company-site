@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}会社概要{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">会社概要</h1>
+    
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1724949287995-66cbbf433c95" class="img-fluid rounded" alt="会社外観">
+        </div>
+        <div class="col-md-6">
+            <h3>Daableについて</h3>
+            <p>Daableは、教育を通じて未来を創造することを使命とする教育機関です。一人ひとりの可能性を最大限に引き出し、社会に貢献できる人材の育成を目指しています。</p>
+            <table class="table">
+                <tr>
+                    <th>社名</th>
+                    <td>一般社団法人 Daable</td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>2020年4月</td>
+                </tr>
+                <tr>
+                    <th>代表理事</th>
+                    <td>山田 太郎</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒100-0001 東京都千代田区1-1-1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="mission-vision py-5">
+        <h2 class="text-center mb-4">ミッション・ビジョン</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">ミッション</h4>
+                        <p class="card-text">教育を通じて、一人ひとりの可能性を最大限に引き出し、より良い社会の実現に貢献します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">ビジョン</h4>
+                        <p class="card-text">2030年までに、10万人の学習者に質の高い教育機会を提供し、教育のスタンダードを創造します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team py-5">
+        <h2 class="text-center mb-4">経営陣</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://i.pravatar.cc/300?img=1" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px" alt="代表理事">
+                    <div class="card-body">
+                        <h5 class="card-title">山田 太郎</h5>
+                        <p class="card-subtitle mb-2 text-muted">代表理事</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://i.pravatar.cc/300?img=2" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px" alt="教育事業部長">
+                    <div class="card-body">
+                        <h5 class="card-title">佐藤 花子</h5>
+                        <p class="card-subtitle mb-2 text-muted">教育事業部長</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://i.pravatar.cc/300?img=3" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px" alt="運営管理部長">
+                    <div class="card-body">
+                        <h5 class="card-title">鈴木 一郎</h5>
+                        <p class="card-subtitle mb-2 text-muted">運営管理部長</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

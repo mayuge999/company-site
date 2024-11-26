@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}料金表{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">料金プラン</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 pricing-card">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="card-title mb-0">ベーシックプラン</h3>
+                </div>
+                <div class="card-body">
+                    <div class="price text-center mb-4">
+                        <span class="h1">¥29,800</span>
+                        <span class="text-muted">/月</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">✓ 週1回の個別指導</li>
+                        <li class="mb-3">✓ オンライン学習材料</li>
+                        <li class="mb-3">✓ 月次進捗レポート</li>
+                        <li class="mb-3">✓ 基本的な学習サポート</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="{{ url_for('basic_plan') }}" class="btn btn-primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 pricing-card">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="card-title mb-0">スタンダードプラン</h3>
+                </div>
+                <div class="card-body">
+                    <div class="price text-center mb-4">
+                        <span class="h1">¥49,800</span>
+                        <span class="text-muted">/月</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">✓ 週2回の個別指導</li>
+                        <li class="mb-3">✓ グループ学習セッション</li>
+                        <li class="mb-3">✓ 進路相談サービス</li>
+                        <li class="mb-3">✓ 専門的な学習サポート</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="{{ url_for('standard_plan') }}" class="btn btn-primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 pricing-card">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h3 class="card-title mb-0">プレミアムプラン</h3>
+                </div>
+                <div class="card-body">
+                    <div class="price text-center mb-4">
+                        <span class="h1">¥79,800</span>
+                        <span class="text-muted">/月</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">✓ 週3回の個別指導</li>
+                        <li class="mb-3">✓ 専門家による進路指導</li>
+                        <li class="mb-3">✓ 24時間質問対応</li>
+                        <li class="mb-3">✓ プレミアムサポート</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="{{ url_for('premium_plan') }}" class="btn btn-primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

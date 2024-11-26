@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block title %}ベーシックプラン詳細{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">ベーシックプラン</h1>
+    
+    <!-- プラン概要 -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">プラン概要</h2>
+                <div class="price-box mb-4">
+                    <span class="h1">¥29,800</span>
+                    <span class="text-muted">/月</span>
+                </div>
+                <p class="lead">学習の第一歩を踏み出すための最適なプランです。基礎から着実に学力を伸ばしていきます。</p>
+                <a href="#contact-form" class="btn btn-primary btn-lg">お申し込み</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" class="img-fluid rounded" alt="学習環境">
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス内容 -->
+    <section class="mb-5">
+        <h2 class="mb-4">提供サービス</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled service-list">
+                    <li class="mb-3">
+                        <h5>✓ 週1回の個別指導</h5>
+                        <p>経験豊富な講師による60分の個別指導を実施</p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>✓ オンライン学習材料</h5>
+                        <p>24時間いつでもアクセス可能な学習コンテンツ</p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>✓ 月次進捗レポート</h5>
+                        <p>学習の進捗状況を詳細にレポート</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled service-list">
+                    <li class="mb-3">
+                        <h5>✓ 基本的な学習サポート</h5>
+                        <p>メールによる質問対応（平日9-17時）</p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>✓ 学習計画の作成</h5>
+                        <p>個々の目標に合わせた学習計画の策定</p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>✓ 教材の提供</h5>
+                        <p>基本的な学習教材の提供</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 導入事例 -->
+    <section class="mb-5">
+        <h2 class="mb-4">導入事例</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Aさん（高校1年生）の場合</h5>
+                        <p class="card-text">数学の基礎が不安でしたが、週1回の個別指導と自習用教材で3ヶ月後には定期テストで80点を達成。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Bさん（中学3年生）の場合</h5>
+                        <p class="card-text">英語の文法に苦手意識がありましたが、体系的な学習で半年後には学校の上位層へ。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="mb-5">
+        <h2 class="mb-4">よくある質問</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        途中でプラン変更は可能ですか？
+                    </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        はい、月単位でのプラン変更が可能です。学習状況に合わせて柔軟に対応いたします。
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        契約期間の縛りはありますか？
+                    </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        最低契約期間は3ヶ月となります。その後は月単位でのご契約となります。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申し込みフォーム -->
+    <section id="contact-form" class="mb-5">
+        <h2 class="mb-4">お申し込み・お問い合わせ</h2>
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">お名前</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">メールアドレス</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">電話番号</label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">ご質問・ご要望</label>
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- カスタマーサポート -->
+    <section class="mb-5">
+        <h2 class="mb-4">カスタマーサポート</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">サポート時間</h5>
+                        <p class="card-text">平日 9:00-17:00<br>※緊急の場合は24時間対応</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">お問い合わせ方法</h5>
+                        <ul class="list-unstyled">
+                            <li>✓ メール: support@daable.com</li>
+                            <li>✓ 電話: 03-1234-5678</li>
+                            <li>✓ チャット: ウェブサイト内チャット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

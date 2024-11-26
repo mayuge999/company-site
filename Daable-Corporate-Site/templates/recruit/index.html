@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block title %}採用情報{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+    <!-- カルーセルセクション -->
+    <div id="recruitCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#recruitCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#recruitCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#recruitCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" class="d-block w-100" alt="採用情報">
+                <div class="carousel-caption">
+                    <h1>Daableで未来を創る</h1>
+                    <p>教育の力で社会に貢献する仲間を募集しています</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" class="d-block w-100" alt="職場環境">
+                <div class="carousel-caption">
+                    <h2>充実した職場環境</h2>
+                    <p>働きやすい環境で、自己実現を目指せます</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952" class="d-block w-100" alt="社員の声">
+                <div class="carousel-caption">
+                    <h2>社員の声</h2>
+                    <p>やりがいのある仕事と充実した私生活の両立</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#recruitCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recruitCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container py-5">
+        <!-- 募集職種概要 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">募集職種</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">教育事業職</h3>
+                            <p class="card-text">教育コンテンツの企画・開発や、学習指導に携わる仕事です。</p>
+                            <a href="{{ url_for('recruit_new_graduate') }}" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">カウンセラー職</h3>
+                            <p class="card-text">生徒の進路相談や学習計画のサポートを行う仕事です。</p>
+                            <a href="{{ url_for('recruit_career') }}" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">運営企画職</h3>
+                            <p class="card-text">教育プログラムの運営や新規事業の企画を行う仕事です。</p>
+                            <a href="{{ url_for('recruit_intern') }}" class="btn btn-primary">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 企業理念・価値観 -->
+        <section class="philosophy-section">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">企業理念・価値観</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div data-aos="fade-right" data-aos-delay="100">
+                            <h3 class="d-flex align-items-center">
+                                <i class="fas fa-flag me-3"></i>Mission
+                            </h3>
+                            <p>教育を通じて、一人ひとりの可能性を最大限に引き出し、より良い社会の実現に貢献します。</p>
+                        </div>
+                        
+                        <div data-aos="fade-right" data-aos-delay="200">
+                            <h3 class="d-flex align-items-center">
+                                <i class="fas fa-eye me-3"></i>Vision
+                            </h3>
+                            <p>2030年までに、10万人の学習者に質の高い教育機会を提供し、教育のスタンダードを創造します。</p>
+                        </div>
+                        
+                        <div data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="d-flex align-items-center">
+                                <i class="fas fa-heart me-3"></i>Value
+                            </h3>
+                            <div class="value-items">
+                                <div class="value-item">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>学習者第一</span>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>革新的な教育手法</span>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>チームワーク</span>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-arrow-trend-up"></i>
+                                    <span>継続的な成長</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 福利厚生 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">充実の福利厚生</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">ワークライフバランス</h4>
+                            <ul class="list-unstyled">
+                                <li>・完全週休2日制（土日祝休み）</li>
+                                <li>・年間休日125日以上</li>
+                                <li>・有給休暇（入社時10日付与）</li>
+                                <li>・育児・介護休暇制度</li>
+                                <li>・時短勤務制度</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">キャリアサポート</h4>
+                            <ul class="list-unstyled">
+                                <li>・資格取得支援制度</li>
+                                <li>・研修制度（新入社員・階層別）</li>
+                                <li>・社内公募制度</li>
+                                <li>・メンター制度</li>
+                                <li>・自己啓発支援</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">手当・保険</h4>
+                            <ul class="list-unstyled">
+                                <li>・各種社会保険完備</li>
+                                <li>・通勤手当（全額支給）</li>
+                                <li>・住宅手当</li>
+                                <li>・家族手当</li>
+                                <li>・残業手当</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">その他制度</h4>
+                            <ul class="list-unstyled">
+                                <li>・社員持株会制度</li>
+                                <li>・財形貯蓄制度</li>
+                                <li>・社員割引制度</li>
+                                <li>・慶弔見舞金制度</li>
+                                <li>・退職金制度</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 採用情報へのリンク -->
+        <section class="text-center mb-5">
+            <h2 class="mb-4">採用情報</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <a href="{{ url_for('recruit_new_graduate') }}" class="btn btn-primary btn-lg w-100">新卒採用</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="{{ url_for('recruit_career') }}" class="btn btn-primary btn-lg w-100">中途採用</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="{{ url_for('recruit_intern') }}" class="btn btn-primary btn-lg w-100">インターン</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,369 @@
+{% extends "base.html" %}
+
+{% block title %}カウンセラー職 - 職種詳細{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">カウンセラー職</h1>
+
+    <!-- 職務概要 -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">職務内容</h2>
+                <p class="lead">生徒一人ひとりの可能性を引き出し、最適な学習環境を提供する仕事です。</p>
+                <div class="mt-4">
+                    <h4 class="mb-3">主な業務内容</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            個別カウンセリングの実施
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            学習計画の立案とサポート
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            進路指導・キャリア相談
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            保護者との面談・報告
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" class="img-fluid rounded" alt="カウンセリングの様子">
+            </div>
+        </div>
+    </section>
+
+    <!-- 求める人物像・スキル -->
+    <section class="mb-5 bg-light py-4 px-3 rounded">
+        <h2 class="mb-4">求める人物像・スキル</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="mb-3">必須スキル・経験</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fas fa-check-circle text-primary me-2"></i>
+                        教育・カウンセリング分野での実務経験（2年以上）
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-check-circle text-primary me-2"></i>
+                        コミュニケーション能力
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-check-circle text-primary me-2"></i>
+                        基本的なPC操作スキル
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">歓迎スキル・経験</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fas fa-plus-circle text-primary me-2"></i>
+                        教員免許保持者
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-plus-circle text-primary me-2"></i>
+                        心理カウンセラー資格
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-plus-circle text-primary me-2"></i>
+                        学習塾での指導経験
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1日の流れ -->
+    <section class="mb-5">
+        <h2 class="mb-4">1日の流れ</h2>
+        <div class="timeline">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">9:00 - 10:00</h5>
+                    <p class="card-text">
+                        <i class="fas fa-clock text-primary me-2"></i>
+                        出社・朝礼・カウンセリング準備
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">10:00 - 12:00</h5>
+                    <p class="card-text">
+                        <i class="fas fa-users text-primary me-2"></i>
+                        個別カウンセリング・学習計画作成
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">13:00 - 15:00</h5>
+                    <p class="card-text">
+                        <i class="fas fa-comments text-primary me-2"></i>
+                        保護者面談・報告書作成
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">15:00 - 17:00</h5>
+                    <p class="card-text">
+                        <i class="fas fa-book text-primary me-2"></i>
+                        学習進捗確認・教材選定
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">17:00 - 18:00</h5>
+                    <p class="card-text">
+                        <i class="fas fa-tasks text-primary me-2"></i>
+                        業務まとめ・翌日の準備
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- キャリアパス -->
+    <section class="mb-5">
+        <h2 class="mb-4">キャリアパス</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">1-3年目</h5>
+                        <p class="card-text">カウンセラー</p>
+                        <small>個別カウンセリング・学習計画作成の実践</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">4-6年目</h5>
+                        <p class="card-text">シニアカウンセラー</p>
+                        <small>チームリーダー・新人育成担当</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">7-9年目</h5>
+                        <p class="card-text">カウンセリングマネージャー</p>
+                        <small>カウンセリング部門の統括・運営</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">10年目以降</h5>
+                        <p class="card-text">教育事業部長</p>
+                        <small>事業戦略の立案・組織運営</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研修制度 -->
+    <section class="mb-5">
+        <h2 class="mb-4">研修制度</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">入社時研修</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・カウンセリング基礎研修（2週間）</li>
+                            <li class="mb-2">・教育メソッド研修（1週間）</li>
+                            <li class="mb-2">・ビジネスマナー研修（3日間）</li>
+                            <li class="mb-2">・システム操作研修（2日間）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">キャリアアップ研修</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・アドバンスドカウンセリング研修</li>
+                            <li class="mb-2">・リーダーシップ研修</li>
+                            <li class="mb-2">・メンター育成研修</li>
+                            <li class="mb-2">・専門資格取得支援</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 給与・待遇 -->
+    <section class="mb-5">
+        <h2 class="mb-4">給与・待遇</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">給与</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・月給：28万円〜45万円</li>
+                            <li class="mb-2">・年収：350万円〜600万円</li>
+                            <li class="mb-2">・賞与：年2回（業績連動）</li>
+                            <li class="mb-2">・昇給：年1回（4月）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">諸手当</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・交通費全額支給</li>
+                            <li class="mb-2">・住宅手当（最大5万円）</li>
+                            <li class="mb-2">・資格手当（最大3万円）</li>
+                            <li class="mb-2">・役職手当</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 福利厚生 -->
+    <section class="mb-5">
+        <h2 class="mb-4">福利厚生</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">保険・年金</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・各種社会保険完備</li>
+                            <li class="mb-2">・厚生年金</li>
+                            <li class="mb-2">・雇用保険</li>
+                            <li class="mb-2">・労災保険</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">休暇・休日</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・年間休日125日以上</li>
+                            <li class="mb-2">・有給休暇（入社時10日）</li>
+                            <li class="mb-2">・夏季・冬季休暇</li>
+                            <li class="mb-2">・慶弔休暇</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">その他制度</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">・社員持株会制度</li>
+                            <li class="mb-2">・財形貯蓄制度</li>
+                            <li class="mb-2">・社員割引制度</li>
+                            <li class="mb-2">・研修費用補助</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 働き方実績 -->
+    <section class="mb-5">
+        <h2 class="mb-4">働き方実績</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">平均残業時間</h4>
+                        <p class="card-text display-6">15時間/月</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">有給取得率</h4>
+                        <p class="card-text display-6">80%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-check fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">育休取得実績</h4>
+                        <p class="card-text display-6">100%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 先輩社員の声 -->
+    <section class="mb-5">
+        <h2 class="mb-4">先輩社員の声</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/150?img=1" class="rounded-circle me-3" style="width: 60px; height: 60px;" alt="社員A">
+                            <div>
+                                <h5 class="card-title mb-1">田中 美咲（入社4年目）</h5>
+                                <p class="card-subtitle text-muted">シニアカウンセラー</p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            「生徒一人ひとりの成長に寄り添えることにやりがいを感じています。充実した研修制度のおかげで、スキルアップも実感できています。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/150?img=2" class="rounded-circle me-3" style="width: 60px; height: 60px;" alt="社員B">
+                            <div>
+                                <h5 class="card-title mb-1">佐藤 健一（入社7年目）</h5>
+                                <p class="card-subtitle text-muted">カウンセリングマネージャー</p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            「カウンセラーとしてのキャリアパスが明確で、自分の成長を実感できる環境です。ワークライフバランスも取りやすく、長く働ける職場だと感じています。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- エントリーボタン -->
+    <section class="text-center">
+        <a href="{{ url_for('recruit_career') }}#entry-form" class="btn btn-primary btn-lg">エントリーする</a>
+    </section>
+</div>
+{% endblock %}

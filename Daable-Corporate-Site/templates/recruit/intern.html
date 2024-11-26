@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% block title %}インターンシップ{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">インターンシップ</h1>
+
+    <!-- プログラム概要 -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">プログラム概要</h2>
+                <p class="lead">教育業界での実践的な経験を通じて、キャリアの可能性を広げませんか？</p>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">✓ 期間：2週間〜1ヶ月</li>
+                    <li class="mb-3">✓ 開催時期：春季・夏季</li>
+                    <li class="mb-3">✓ 参加費：無償（交通費支給）</li>
+                    <li class="mb-3">✓ 対象：大学3年生・修士1年生</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="img-fluid rounded" alt="インターンシップ">
+            </div>
+        </div>
+    </section>
+
+    <!-- インターンシップコース -->
+    <section class="mb-5">
+        <h2 class="mb-4">インターンシップコース</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">教育コンテンツ開発コース</h3>
+                        <p class="card-text">教材開発やカリキュラム設計を体験</p>
+                        <ul>
+                            <li>教育コンテンツの企画立案</li>
+                            <li>教材作成の実践</li>
+                            <li>効果測定と改善提案</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">教育マーケティングコース</h3>
+                        <p class="card-text">教育サービスの広報・集客を体験</p>
+                        <ul>
+                            <li>市場調査・分析</li>
+                            <li>プロモーション企画</li>
+                            <li>SNS運用実践</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">教育テックコース</h3>
+                        <p class="card-text">EdTechサービスの開発を体験</p>
+                        <ul>
+                            <li>学習アプリの企画</li>
+                            <li>ユーザビリティ改善</li>
+                            <li>データ分析・活用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プログラム内容 -->
+    <section class="mb-5">
+        <h2 class="mb-4">プログラム内容</h2>
+        <div class="timeline">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Week 1：基礎研修</h4>
+                    <ul>
+                        <li>教育業界の概要理解</li>
+                        <li>事業戦略の学習</li>
+                        <li>チーム活動の基礎</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Week 2：実践活動</h4>
+                    <ul>
+                        <li>各コースでの実践的な業務</li>
+                        <li>メンターによる指導</li>
+                        <li>チームプロジェクト</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="card-title">Week 3-4：プロジェクト</h4>
+                    <ul>
+                        <li>課題解決プロジェクト</li>
+                        <li>成果発表準備</li>
+                        <li>キャリア面談</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- インターン生の声 -->
+    <section class="mb-5">
+        <h2 class="mb-4">インターン生の声</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1527956041665-d7a1b380c460" class="card-img-top" alt="インターン生1">
+                    <div class="card-body">
+                        <h4 class="card-title">Aさん（教育コンテンツ開発コース）</h4>
+                        <p class="card-text">「実際の教材開発に携わり、教育現場の生の声を聞けたことが大きな学びになりました。」</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1527956041665-d7a1b380c460" class="card-img-top" alt="インターン生2">
+                    <div class="card-body">
+                        <h4 class="card-title">Bさん（教育テックコース）</h4>
+                        <p class="card-text">「最新のテクノロジーを教育に活用する方法を学び、新しい可能性を見出せました。」</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- エントリーフォーム -->
+    <section id="entry-form" class="mb-5">
+        <h2 class="mb-4">エントリー</h2>
+        <div class="card">
+            <div class="card-body">
+                <form action="{{ url_for('handle_entry') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">お名前</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">メールアドレス</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="university" class="form-label">大学・学部</label>
+                        <input type="text" class="form-control" id="university" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="grade" class="form-label">学年</label>
+                        <select class="form-select" id="grade" required>
+                            <option value="">選択してください</option>
+                            <option value="b3">学部3年生</option>
+                            <option value="b4">学部4年生</option>
+                            <option value="m1">修士1年生</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="course" class="form-label">希望コース</label>
+                        <select class="form-select" id="course" required>
+                            <option value="">選択してください</option>
+                            <option value="content">教育コンテンツ開発コース</option>
+                            <option value="counseling">カウンセリングコース</option>
+                            <option value="marketing">教育マーケティングコース</option>
+                            <option value="tech">教育テックコース</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="period" class="form-label">希望期間</label>
+                        <select class="form-select" id="period" required>
+                            <option value="">選択してください</option>
+                            <option value="spring">春季（2-3月）</option>
+                            <option value="summer">夏季（8-9月）</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="motivation" class="form-label">志望動機</label>
+                        <textarea class="form-control" id="motivation" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">エントリーする</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
